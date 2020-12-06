@@ -1,0 +1,21 @@
+.classMoveUp{
+    fill: white;
+    animation-name: moveUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.classMoveDown{
+    fill: white;
+    animation-name: moveDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp{
+    0%{transform: translateY(0); stroke: black}
+    100%{transform: translateY(-20px); stroke: goldenrod}
+}
+@keyframes moveDown{
+    0%{transform: translateY(-20px); stroke: goldenrod}
+    100%{transform: translateY(0px); stroke: black}
+}

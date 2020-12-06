@@ -195,3 +195,27 @@ console.log(existsHigher([5, 3, 15, 22, 4], 10));
 console.log(existsHigher([1, 2, 3, 4, 5], 8));
 console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
 console.log(existsHigher([], 5));
+
+
+console.clear();
+
+//nasłuchiwanie zdarzenia
+document.getElementById("sklep_smyk").addEventListener("click", moveUp);
+
+const sklep_smyk_cube = [document.getElementById("gora"), document.getElementById("przod"), document.getElementById("bok")];
+
+const sklep_smyk = document.getElementById("sklep_smyk");
+function moveUp() {
+    //usuwa style z elementów tablicy
+    sklep_smyk_cube.forEach(item => item.style = "");
+
+    if (sklep_smyk.classList.contains("classMoveUp")) {
+        sklep_smyk.classList = "";
+        sklep_smyk.classList.add("classMoveDown");
+    }
+    else {
+        sklep_smyk.classList="";
+        sklep_smyk.classList.add("classMoveUp");
+    }
+    
+}
