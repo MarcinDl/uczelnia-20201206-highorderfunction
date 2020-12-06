@@ -110,8 +110,41 @@ function additiveInverse(item,index,arr) {
 }
 console.log(numbs);
 
-
+console.clear();
 // zad 2
 // Napisz funkcję, która dzieli tablicę na dwie podtablice: jedną ze wszystkimi parzystymi liczbami całkowitymi, a drugą ze wszystkimi nieparzystymi liczbami całkowitymi. Zwróć wynik w następującym formacie:
 
 // [[odd], [even]]
+
+//spobó 1
+
+function evenOdd(arr) {
+    let r = [[], []];
+    for (let i in arr) {
+        // console.log(i)
+        r[arr[i]%2].push(arr[i])
+    }
+    return r
+}
+console.log(evenOdd([12,43,5,6534,534]))
+//sposób 2
+
+// function evenOdd(arr) {
+//     console.log(arr)
+//     let odd = [], even = [];
+//     for (let item of arr) {
+//         (item % 2 === 0) ? even.push(item) : odd.push(item)
+//     }
+
+//     return [odd,even]
+// }
+
+// console.log(evenOdd([12,43,5,6534,534]))
+
+// sposób 3
+
+// function evenOdd(arr) {
+//     let even = arr.filter(x => x % 2 === 0);
+//     let odd = arr.filter(x => x % 2 === 1);
+//     return [odd,even]
+// }
