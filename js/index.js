@@ -33,11 +33,19 @@ console.log("numbersForEach", numbersForEach);
 
 const numbersFilter = [1, 2, 5, 7, 8, 9, 5, 23, 32, 54, 55, 76, 234, 453];
 
-const newNumbersFilter = numbersFilter.filter(morethentwenty);
+// const newNumbersFilter = numbersFilter.filter(morethentwenty);
 
-function morethentwenty(element, index, arr) {
-    return element > 20;
-}
+// function morethentwenty(element, index, arr) {
+//     return element > 20;
+// }
+
+// funkcja strzałkowa - sposób 1 
+
+// morethentwenty = (element, index, arr) => element > 20
+// const newNumbersFilter = numbersFilter.filter(morethentwenty);
+
+// funkcja strzałkowa - sposób 2
+const newNumbersFilter = numbersFilter.filter( elem => elem > 20)
 
 console.log("numbersFilter",numbersFilter)
 console.log("newNumbersFilter",newNumbersFilter)
