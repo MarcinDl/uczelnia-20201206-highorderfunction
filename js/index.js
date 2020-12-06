@@ -148,3 +148,14 @@ console.log(evenOdd([12,43,5,6534,534]))
 //     let odd = arr.filter(x => x % 2 === 1);
 //     return [odd,even]
 // }
+
+//zad 3
+
+// Napisz funkcję, która zwraca true, jeśli istnieje co najmniej jedna liczba większa lub równa n (która to jest drugim parametrem w podanej funkcji.
+
+// existsHigher([5, 3, 15, 22, 4], 10) ➞ true
+// existsHigher([1, 2, 3, 4, 5], 8) ➞ false
+// existsHigher([4, 3, 3, 3, 2, 2, 2], 4) ➞ true
+// existsHigher([], 5) ➞ false
+
+// Spróbuj rozwiązać zadanie wykorzystując metodę some: https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/some
