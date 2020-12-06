@@ -159,3 +159,39 @@ console.log(evenOdd([12,43,5,6534,534]))
 // existsHigher([], 5) ➞ false
 
 // Spróbuj rozwiązać zadanie wykorzystując metodę some: https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/some
+
+// sposób 1 
+
+// function existsHigher(arr,n) {
+//     for (let r of arr) {
+//         if (r >= n) {
+//             return true
+//         }
+//     }
+//     return false
+// }
+
+// console.log(existsHigher([5, 3, 15, 22, 4], 10));
+// console.log(existsHigher([1, 2, 3, 4, 5], 8));
+// console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+// console.log(existsHigher([], 5));
+
+//sposób 2
+
+// function existsHigher(arr, n) {
+//     return arr.filter(x => x >= n).length > 0;
+// }
+
+// console.log(existsHigher([5, 3, 15, 22, 4], 10));
+// console.log(existsHigher([1, 2, 3, 4, 5], 8));
+// console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+// console.log(existsHigher([], 5));
+
+//sposób 3
+
+const existsHigher = (arr,n) => arr.some(x => x>= n)
+
+console.log(existsHigher([5, 3, 15, 22, 4], 10));
+console.log(existsHigher([1, 2, 3, 4, 5], 8));
+console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+console.log(existsHigher([], 5));
