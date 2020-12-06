@@ -9,7 +9,8 @@ console.log("newNumbersMap", newNumbersMap)
 
 const newNumbersMap_II = numbersMap.map(addingOneMap)
 
-function addingOneMap(item) {
+function addingOneMap(item, index, arr) {
+    console.log(arr[index])
     return item * 10;
 }
 
