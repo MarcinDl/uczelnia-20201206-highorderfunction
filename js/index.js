@@ -108,4 +108,10 @@ numbs.forEach(additiveInverse);
 function additiveInverse(item,index,arr) {
     arr[index] = -item
 }
-console.log(numbs)
+console.log(numbs);
+
+
+// zad 2
+// Napisz funkcję, która dzieli tablicę na dwie podtablice: jedną ze wszystkimi parzystymi liczbami całkowitymi, a drugą ze wszystkimi nieparzystymi liczbami całkowitymi. Zwróć wynik w następującym formacie:
+
+// [[odd], [even]]
