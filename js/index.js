@@ -15,3 +15,29 @@ function addingOneMap(item, index, arr) {
 }
 
 console.log("newNumbersMap_II",newNumbersMap_II);
+
+
+/////////// FOR EACH ///////////
+
+const numbersForEach = [1, 2, 3, 4, 9, 16, 25];
+
+function addingOneForEach(item, index, arr) {
+    console.log(item + 1)
+}
+
+numbersForEach.forEach(addingOneForEach);
+
+console.log("numbersForEach", numbersForEach);
+
+/////////// FILTER ///////////
+
+const numbersFilter = [1, 2, 5, 7, 8, 9, 5, 23, 32, 54, 55, 76, 234, 453];
+
+const newNumbersFilter = numbersFilter.filter(morethentwenty);
+
+function morethentwenty(element, index, arr) {
+    return element > 20;
+}
+
+console.log("numbersFilter",numbersFilter)
+console.log("newNumbersFilter",newNumbersFilter)
